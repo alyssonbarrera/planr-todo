@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/core/components/ui/card'
 import { TaskList } from '@/modules/tasks/components/task-list'
-import { TaskForm } from '@/modules/tasks/forms/task-form/task-form'
+import { TaskForm } from '@/modules/tasks/forms/task-form'
 import { getTasksByUsersRequest } from '@/modules/tasks/http/get-tasks-by-user'
 import { getAuthenticatedUserRequest } from '@/modules/users/http/get-authenticated-user-request'
 import { cookies } from 'next/headers'
