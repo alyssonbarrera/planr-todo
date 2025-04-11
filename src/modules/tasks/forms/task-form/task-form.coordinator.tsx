@@ -1,8 +1,8 @@
 import { useFormState } from '@/core/hooks/use-form-state'
-import { taskFormAction } from './task-form.action'
 import { useToast } from '@/core/hooks/use-toast'
+import { taskFormAction } from './task-form.action'
 
-export function useTaskForm() {
+export function taskFormCoordinator() {
   const { toast } = useToast()
 
   const {

@@ -1,11 +1,11 @@
 'use client'
 
+import { Alert, AlertDescription, AlertTitle } from '@/core/components/ui/alert'
 import { Button } from '@/core/components/ui/button'
 import { Input } from '@/core/components/ui/input'
 import { Label } from '@/core/components/ui/label'
-import { useRegisterForm } from './register-form.hook'
-import { Alert, AlertDescription, AlertTitle } from '@/core/components/ui/alert'
 import { AlertTriangle } from 'lucide-react'
+import { registerFormCoordinator } from './register-form.coordinator'
 
 export function RegisterForm() {
   const {
@@ -15,7 +15,7 @@ export function RegisterForm() {
     isPending,
     clearFormError,
     handleRegisterFormSubmit,
-  } = useRegisterForm()
+  } = registerFormCoordinator()
 
   return (
     <form className="space-y-4" onSubmit={handleRegisterFormSubmit}>

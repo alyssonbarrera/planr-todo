@@ -1,11 +1,11 @@
 'use client'
 
+import { Alert, AlertDescription, AlertTitle } from '@/core/components/ui/alert'
 import { Button } from '@/core/components/ui/button'
 import { Input } from '@/core/components/ui/input'
 import { Label } from '@/core/components/ui/label'
-import { useLoginForm } from './login-form.hook'
 import { AlertTriangle } from 'lucide-react'
-import { Alert, AlertDescription, AlertTitle } from '@/core/components/ui/alert'
+import { loginFormCoordinator } from './login-form.coordinator'
 
 export function LoginForm() {
   const {
@@ -15,7 +15,7 @@ export function LoginForm() {
     isPending,
     clearFormError,
     handleLoginFormSubmit,
-  } = useLoginForm()
+  } = loginFormCoordinator()
 
   return (
     <form className="space-y-4" onSubmit={handleLoginFormSubmit}>

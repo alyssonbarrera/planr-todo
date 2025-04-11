@@ -2,7 +2,7 @@ import { useFormState } from '@/core/hooks/use-form-state'
 import { useRouter } from 'next/navigation'
 import { registerFormAction } from './register-form.action'
 
-export function useRegisterForm() {
+export function registerFormCoordinator() {
   const router = useRouter()
 
   const {

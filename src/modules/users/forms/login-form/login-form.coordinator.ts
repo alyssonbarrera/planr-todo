@@ -2,7 +2,7 @@ import { useFormState } from '@/core/hooks/use-form-state'
 import { useRouter } from 'next/navigation'
 import { loginFormAction } from './login-form.action'
 
-export function useLoginForm() {
+export function loginFormCoordinator() {
   const router = useRouter()
 
   const {
